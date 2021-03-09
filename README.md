@@ -51,8 +51,10 @@ Additionally, as setting environment variables may be difficult for system
 utilities such as YUM/DNF (for example during automatic package updates), we
 offer a config file option for these plugins. It lives at
 `/etc/dnf/plugins/artifact-registry.conf` for DNF and
-`/etc/yum/pluginconf.d/artifact-registry.conf` for YUM, and supports the
-following options:
+`/etc/yum/pluginconf.d/artifact-registry.conf` for YUM, and a sample file is
+available here as [plugin.conf](./plugin.conf).
+
+The plugin supports the following options:
    ```
    [main]
    service_account_json = /path/to/creds.json
